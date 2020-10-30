@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/snfx_battle_text2.ogg-b5059856c4414ee14fd8490ec26f5d3e.oggstr"
+
+[deps]
+
+source_file="res://sonido/efectos/snfx_battle_text2.ogg"
+dest_files=[ "res://.import/snfx_battle_text2.ogg-b5059856c4414ee14fd8490ec26f5d3e.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

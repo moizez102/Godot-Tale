@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Principal/Jugador/Sprites/frisk/Sprites_frisk.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://Principal/Jugador/Scripts/jugador epica.gd" type="Script" id=2]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 5.62055
+height = 3.81846
+
+[node name="Jugador" type="KinematicBody2D"]
+script = ExtResource( 2 )
+
+[node name="sprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0.0223236, -10.9313 )
+frames = ExtResource( 1 )
+animation = "quieto_abajo"
+
+[node name="Colision" type="CollisionShape2D" parent="."]
+position = Vector2( -0.0992126, -3.07559 )
+shape = SubResource( 1 )
+
+[node name="Camara" type="Camera2D" parent="."]
+visible = false
+current = true
+zoom = Vector2( 0.5, 0.5 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+visible = false
